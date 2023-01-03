@@ -1,5 +1,5 @@
 
-
+// GETTING SIDE DIV ELEMENT
 let title1=document.querySelector(".first");
 let title2=document.querySelector(".second");
 let title3=document.querySelector(".third");
@@ -13,7 +13,7 @@ let title10=document.querySelector(".tenth");
 let title11=document.querySelector(".levelth");
 let title12=document.querySelector(".twelth");
 
-
+// GETTING CONTENT DIV
 let countent1=document.querySelector("#content-1");
 let countent2=document.querySelector("#content-2");
 let countent3=document.querySelector("#content-3");
@@ -38,7 +38,12 @@ fetch("https://api.artic.edu/api/v1/artworks")
    for(var i=0;i<content.length;i++){
     console.log(content[0]);
     console.log(content[0].title);
-    console.log(content[1].title);
+    console.log(content[1].title);  
+
+
+           //  SIDE BAR -ARTICLE TITLE GETTING METHOT
+
+
        title1.innerHTML += content[0].title;
        title2.innerHTML += content[1].title;
        title3.innerHTML += content[2].title;
@@ -51,6 +56,10 @@ fetch("https://api.artic.edu/api/v1/artworks")
        title10.innerHTML += content[9].title;
        title11.innerHTML += content[10].title;
        title12.innerHTML += content[11].title;
+  
+
+      //  MAIN CONTENT GETTING METHO
+
 
        countent1.innerHTML +=`
        <h2>1) ${content[0].title}</h2>
